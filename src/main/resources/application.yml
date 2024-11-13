@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    password: 4544120
+    url: jdbc:mysql://localhost:8080/deepu
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    password: ${GMAIL_PASSWORD}
+
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    username: ${GMAIL_USERNAME}
+  main:
+    banner-mode: 'off'
+    
+    
+#logging:
+#  file:
+#    name: sample.log
+
+app:
+ messages:
+  "InvalidLogin": "Invalid Credentials"
+  "succMsg": "Registartion Successful"
+  "RegSuccessMsg": "Registration Success"
+  "RegFailMsg": "Registration Failed, Please try again..."
+  "pwdCheckMsg": "Both Passwords should be same"
+  
